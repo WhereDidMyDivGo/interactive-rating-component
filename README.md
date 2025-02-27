@@ -24,7 +24,7 @@ This is an interactive rating component built using pure **HTML**, **CSS**, and 
 - ✨ Dynamic hover effects for an interactive experience.
 - 🎯 No frameworks required – just vanilla HTML, CSS, and JavaScript.
 - 🎨 Easy customization for colors, size, and rating scale.
-- <br />
+<br />
 
 **<h1 align="center">📦 Installation</h1>**
 
