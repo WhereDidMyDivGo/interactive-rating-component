@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131518;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  background-color: #202630;
+  padding: 32px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262e38;
+}
+
+.star {
+  width: 16.75px;
+  height: 16px;
+}
+
+.how {
+  margin-top: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35.45px;
+}
+
+.para {
+  margin-top: 7px;
+  color: #969fad;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.numbers {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  height: 51px;
+  width: 100%;
+}
+
+.number {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #262e38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7c8798;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.submit {
+  margin-top: 32px;
+  width: 100%;
+  height: 45px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18.99px;
+  background-color: #fc7614;
+  color: #ffffff;
+  border: none;
+  border-radius: 22.5px;
+}
+
+/* #################### hover #################### */
+
+.number {
+  transition: all 0.3s ease;
+}
+
+.number:hover {
+  cursor: pointer;
+  background-color: #fc7614;
+  color: #ffffff;
+}
+
+.number.selected {
+  background-color: #7c8798;
+  color: #ffffff;
+}
+
+.submit {
+  transition: all 0.3s ease;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #fc7614;
+}
+
+/* #################### modal #################### */
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  background-color: #202630;
+  padding: 32px;
+}
+
+.rating {
+  width: 162px;
+  height: 108px;
+}
+
+.out-of {
+  margin-top: 32px;
+  width: 193px;
+  height: 32px;
+  border-radius: 22.5px;
+  background-color: #262e38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fc7614;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.thank {
+  margin-top: 32px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35.45px;
+  color: #ffffff;
+}
+
+.para2 {
+  text-align: center;
+  margin-top: 7px;
+  color: #969fad;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 340px;
+}
+
+/* #################### responsive #################### */
+
+@media screen and (max-width: 450px) {
+  .card,
+  .modal-content {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    margin: 24px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .star {
+    width: 13.96px;
+    height: 13.33px;
+  }
+
+  .how,
+  .thank {
+    font-size: 24px;
+    line-height: 30.38px;
+  }
+
+  .how {
+    margin-top: 16px;
+  }
+
+  .para,
+  .para2 {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+  }
+
+  .para {
+    margin-top: 10px;
+  }
+
+  .number {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .submit {
+    height: 40px;
+    font-size: 14px;
+    line-height: 17.72px;
+  }
+
+  .out-of {
+    margin-top: 24px;
+    width: 168px;
+    margin-top: 16px;
+  }
+
+  .thank {
+    margin-top: 24px;
+  }
+
+  .para2 {
+    margin-top: 10px;
+  }
+}
